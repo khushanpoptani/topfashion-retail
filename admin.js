@@ -1,4 +1,6 @@
 (function () {
+  const CONTENT_URL = "/data/site-content.json";
+  const SAVE_URL = "/api/content";
   let currentContent = null;
 
   document.addEventListener("DOMContentLoaded", () => {
@@ -64,7 +66,7 @@
       setStatus("Loading content...", "");
     }
     try {
-      const response = await fetch("/api/content", { cache: "no-store" });
+      const response = await fetch(`${CONTENT_URL}?ts=${Date.now()}`, { cache: "no-store" });
       if (!response.ok) {
         throw new Error(await extractErrorMessage(response, "Unable to load site content."));
       }
@@ -179,7 +181,7 @@
       const payload = collectFormData();
       setStatus("Saving changes...", "");
 
-      const response = await fetch("/api/content", {
+      const response = await fetch(SAVE_URL, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -193,7 +195,7 @@
       applyLoadedContent(updated, { silent: true });
       setStatus(
         updated.updatedAt
-          ? `Saved successfully. Public pages will reflect this automatically. Updated: ${new Date(
+          ? `Saved successfully. Public pages will read the updated JSON automatically. Updated: ${new Date(
               updated.updatedAt
             ).toLocaleString()}`
           : "Saved successfully.",

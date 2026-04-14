@@ -159,6 +159,13 @@ const server = http.createServer(async (req, res) => {
       return writeJson(res, 200, { ok: true, contentFile: CONTENT_FILE_PATH });
     }
 
+    if (requestUrl.pathname === "/data/site-content.json") {
+      if (req.method === "GET" || req.method === "HEAD") {
+        return serveContentJsonFile(res, req.method === "HEAD");
+      }
+      return writeJson(res, 405, { error: "Method not allowed." });
+    }
+
     if (requestUrl.pathname === "/api/content") {
       if (req.method === "GET") {
         return writeJson(res, 200, loadContentRecord());
@@ -355,6 +362,21 @@ function serveStaticFile(requestPath, res, headOnly) {
   res.writeHead(200, {
     "Content-Length": body.length,
     "Content-Type": contentType,
+  });
+  if (!headOnly) {
+    res.end(body);
+    return;
+  }
+  res.end();
+}
+
+function serveContentJsonFile(res, headOnly) {
+  ensureContentFile();
+  const body = fs.readFileSync(CONTENT_FILE_PATH);
+  res.writeHead(200, {
+    "Content-Length": body.length,
+    "Content-Type": MIME_TYPES[".json"],
+    "Cache-Control": "no-store",
   });
   if (!headOnly) {
     res.end(body);

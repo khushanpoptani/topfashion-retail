@@ -1,4 +1,5 @@
 (function () {
+  const CONTENT_URL = "/data/site-content.json";
   const POLL_INTERVAL_MS = 8000;
   let lastUpdatedAt = "";
 
@@ -9,7 +10,7 @@
 
   async function loadContent() {
     try {
-      const response = await fetch("/api/content", { cache: "no-store" });
+      const response = await fetch(`${CONTENT_URL}?ts=${Date.now()}`, { cache: "no-store" });
       if (!response.ok) {
         return;
       }
