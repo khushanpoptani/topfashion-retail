@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Fashion Admin</title>
+    <meta
+      name="description"
+      content="Admin panel for editing Top Fashion website details, collections, timings and social links."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="admin.css" />
+    <script id="initial-admin-content" type="application/json">__INITIAL_ADMIN_CONTENT__</script>
+    <script src="admin.js" defer></script>
+  </head>
+  <body class="admin-page">
+    <header class="admin-topbar">
+      <div class="admin-topbar-inner">
+        <div class="admin-topbar-copy">
+          <a class="brand" href="admin.html">
+            <span class="brand-mark">Top Fashion</span>
+            <span class="brand-note">Content Admin</span>
+          </a>
+          <p>
+            Edit the live website sections from one place. Public pages refresh the latest saved
+            content automatically.
+          </p>
+        </div>
+
+        <div class="admin-topbar-actions">
+          <a class="button button-ghost" href="index.html">Open Website</a>
+          <button class="button button-ghost" id="reload-content" type="button">Reload Content</button>
+          <button class="button button-primary" id="save-content" type="button">Save Changes</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="admin-shell">
+      <aside class="admin-sidebar">
+        <h2>Sections</h2>
+        <nav class="admin-nav" aria-label="Admin sections">
+          <button class="is-active" type="button" data-section-target="branding">About & Branding</button>
+          <button type="button" data-section-target="contact">Contact Details</button>
+          <button type="button" data-section-target="timing">Store Timings</button>
+          <button type="button" data-section-target="map">Location Map</button>
+          <button type="button" data-section-target="sale">Sale Tagline</button>
+          <button type="button" data-section-target="collections">Collections</button>
+          <button type="button" data-section-target="social">Social Links</button>
+          <button type="button" data-section-target="others">Others</button>
+        </nav>
+      </aside>
+
+      <main class="admin-main">
+        <section class="admin-main-card">
+          <div class="admin-main-header">
+            <div>
+              <h1 class="section-title" style="margin: 0;">Website Content Manager</h1>
+              <p>Keep the website simple to manage while updating real content whenever you need.</p>
+            </div>
+            <div class="admin-note">Public pages check for new content every few seconds.</div>
+          </div>
+          <div class="admin-status" id="admin-status">Loading content...</div>
+        </section>
+
+        <section class="admin-main-card admin-panel" data-section-panel="branding">
+          <h2>About & Branding</h2>
+          <p>Company name, hero copy, about content and footer description.</p>
+          <div class="admin-form-grid">
+            <label class="admin-field">
+              <span>Company Name</span>
+              <input type="text" data-path="branding.companyName" />
+            </label>
+            <label class="admin-field">
+              <span>Brand Note</span>
+              <input type="text" data-path="branding.brandNote" />
+            </label>
+            <label class="admin-field">
+              <span>Hero Eyebrow</span>
+              <input type="text" data-path="branding.heroEyebrow" />
+            </label>
+            <label class="admin-field">
+              <span>Hero Title</span>
+              <input type="text" data-path="branding.heroTitle" />
+            </label>
+            <label class="admin-field admin-field-full">
+              <span>Hero Description</span>
+              <textarea rows="4" data-path="branding.heroDescription"></textarea>
+            </label>
+            <label class="admin-field">
+              <span>Hero Card 1 Label</span>
+              <input type="text" data-path="branding.heroPriceLabel" />
+            </label>
+            <label class="admin-field">
+              <span>Hero Card 1 Value</span>
+              <input type="text" data-path="branding.heroPriceValue" />
+            </label>
+            <label class="admin-field">
+              <span>Hero Card 2 Label</span>
+              <input type="text" data-path="branding.heroTimingLabel" />
+            </label>
+            <label class="admin-field">
+              <span>Hero Card 2 Value</span>
+              <input type="text" data-path="branding.heroTimingValue" />
+            </label>
+            <label class="admin-field">
+              <span>Hero Card 3 Label</span>
+              <input type="text" data-path="branding.heroBestForLabel" />
+            </label>
+            <label class="admin-field">
+              <span>Hero Card 3 Value</span>
+              <input type="text" data-path="branding.heroBestForValue" />
+            </label>
+            <label class="admin-field admin-field-full">
+              <span>About Heading</span>
+              <input type="text" data-path="branding.aboutHeading" />
+            </label>
+            <label class="admin-field admin-field-full">
+              <span>About Paragraph 1</span>
+              <textarea rows="4" data-path="branding.aboutParagraph1"></textarea>
+            </label>
+            <label class="admin-field admin-field-full">
+              <span>About Paragraph 2</span>
+              <textarea rows="4" data-path="branding.aboutParagraph2"></textarea>
+            </label>
+            <label class="admin-field admin-field-full">
+              <span>About Paragraph 3</span>
+              <textarea rows="4" data-path="branding.aboutParagraph3"></textarea>
+            </label>
+            <label class="admin-field admin-field-full">
+              <span>Footer Description</span>
+              <textarea rows="3" data-path="branding.footerDescription"></textarea>
+            </label>
+          </div>
+        </section>
+
+        <section class="admin-main-card admin-panel" data-section-panel="contact" hidden>
+          <h2>Contact Details</h2>
+          <p>Phone, WhatsApp and address used across the homepage, contact page and footer.</p>
+          <div class="admin-form-grid">
+            <label class="admin-field admin-field-full">
+              <span>Address</span>
+              <textarea rows="3" data-path="contact.address"></textarea>
+            </label>
+            <label class="admin-field">
+              <span>Phone</span>
+              <input type="text" data-path="contact.phone" />
+            </label>
+            <label class="admin-field">
+              <span>WhatsApp</span>
+              <input type="text" data-path="contact.whatsapp" />
+            </label>
+          </div>
+        </section>
+
+        <section class="admin-main-card admin-panel" data-section-panel="timing" hidden>
+          <h2>Store Timings</h2>
+          <p>Opening hours and current status text shown in timing cards.</p>
+          <div class="admin-form-grid">
+            <label class="admin-field">
+              <span>Weekdays Label</span>
+              <input type="text" data-path="timing.weekdaysLabel" />
+            </label>
+            <label class="admin-field">
+              <span>Weekdays Hours</span>
+              <input type="text" data-path="timing.weekdaysHours" />
+            </label>
+            <label class="admin-field">
+              <span>Sunday Label</span>
+              <input type="text" data-path="timing.sundayLabel" />
+            </label>
+            <label class="admin-field">
+              <span>Sunday Hours</span>
+              <input type="text" data-path="timing.sundayHours" />
+            </label>
+            <label class="admin-field admin-field-full">
+              <span>Status Text</span>
+              <input type="text" data-path="timing.statusText" />
+            </label>
+          </div>
+        </section>
+
+        <section class="admin-main-card admin-panel" data-section-panel="map" hidden>
+          <h2>Location Map</h2>
+          <p>Paste your Google Maps page link and optional embed link. The site will use these for directions and the live map.</p>
+          <div class="admin-form-grid">
+            <label class="admin-field admin-field-full">
+              <span>Google Maps Link</span>
+              <input type="url" data-path="map.locationUrl" placeholder="https://maps.google.com/..." />
+            </label>
+            <label class="admin-field admin-field-full">
+              <span>Google Maps Embed Link</span>
+              <input type="url" data-path="map.embedUrl" placeholder="https://www.google.com/maps?q=...&amp;output=embed" />
+            </label>
+            <label class="admin-field admin-field-full">
+              <span>Fallback Search Query</span>
+              <input type="text" data-path="map.query" />
+            </label>
+          </div>
+        </section>
+
+        <section class="admin-main-card admin-panel" data-section-panel="sale" hidden>
+          <h2>Sale Tagline</h2>
+          <p>Update the top offer strip displayed on the homepage.</p>
+          <div class="admin-form-grid">
+            <label class="admin-field">
+              <span>Sale Badge</span>
+              <input type="text" data-path="sale.badge" />
+            </label>
+            <label class="admin-field admin-field-full">
+              <span>Sale Tagline</span>
+              <textarea rows="3" data-path="sale.tagline"></textarea>
+            </label>
+          </div>
+        </section>
+
+        <section class="admin-main-card admin-panel" data-section-panel="collections" hidden>
+          <div class="admin-collection-toolbar">
+            <div>
+              <h2>Collections</h2>
+              <p>Edit category cards used on the homepage and collections page.</p>
+            </div>
+            <button class="button button-primary" id="add-collection" type="button">Add Collection</button>
+          </div>
+          <div class="admin-collection-list" id="collection-editor-list"></div>
+        </section>
+
+        <section class="admin-main-card admin-panel" data-section-panel="social" hidden>
+          <h2>Social Links</h2>
+          <p>Keep Instagram, Facebook and Maps details consistent across the website.</p>
+          <div class="admin-form-grid">
+            <label class="admin-field">
+              <span>Instagram URL</span>
+              <input type="url" data-path="social.instagramUrl" />
+            </label>
+            <label class="admin-field">
+              <span>Instagram Handle</span>
+              <input type="text" data-path="social.instagramHandle" />
+            </label>
+            <label class="admin-field">
+              <span>Facebook URL</span>
+              <input type="url" data-path="social.facebookUrl" />
+            </label>
+            <label class="admin-field">
+              <span>Facebook Handle</span>
+              <input type="text" data-path="social.facebookHandle" />
+            </label>
+            <label class="admin-field admin-field-full">
+              <span>Maps Card Description</span>
+              <textarea rows="3" data-path="social.mapsLabel"></textarea>
+            </label>
+          </div>
+        </section>
+
+        <section class="admin-main-card admin-panel" data-section-panel="others" hidden>
+          <h2>Others</h2>
+          <p>Extra homepage review content and footer copyright text.</p>
+          <div class="admin-form-grid">
+            <label class="admin-field">
+              <span>Review Score</span>
+              <input type="text" data-path="others.reviewScore" />
+            </label>
+            <label class="admin-field admin-field-full">
+              <span>Review Summary</span>
+              <textarea rows="3" data-path="others.reviewSummary"></textarea>
+            </label>
+            <label class="admin-field admin-field-full">
+              <span>Review Note</span>
+              <textarea rows="3" data-path="others.reviewNote"></textarea>
+            </label>
+            <label class="admin-field admin-field-full">
+              <span>Copyright</span>
+              <input type="text" data-path="others.copyrightText" />
+            </label>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

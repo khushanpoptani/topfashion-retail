@@ -1,0 +1,107 @@
+{
+  "content": {
+    "branding": {
+      "companyName": "Top Fashion",
+      "brandNote": "Effortless Style for Everyday Living",
+      "heroEyebrow": "Elevated Everyday Wear",
+      "heroTitle": "Own Style",
+      "heroDescription": "Modern styles for men, women, and kids — thoughtfully curated for comfort, quality, and everyday confidence. Discover fashion that fits your lifestyle, not just your wardrobe.",
+      "aboutHeading": "Redefining Everyday Fashion",
+      "aboutParagraph1": "Top Fashion is your go-to destination for stylish, affordable clothing for the entire family. We believe fashion should be accessible, expressive, and comfortable — without compromising on quality. Our collections are thoughtfully selected to keep you ahead of trends while staying true to your personal style.",
+      "aboutParagraph2": "From casual essentials to statement pieces, we offer a wide range of apparel for men, women, and kids. Each piece is chosen with attention to fabric, fit, and finish — ensuring you not only look good but feel great too.",
+      "aboutParagraph3": "At Top Fashion, we’re more than just a clothing store. We’re a space where style meets confidence, where every visit inspires a new look, and where fashion becomes a part of your everyday life.",
+      "footerDescription": "Top Fashion — Your everyday style destination. Discover quality clothing, trending designs, and unbeatable value for men, women, and kids. Visit us in-store or explore our latest collections online.",
+      "heroPriceLabel": "Open Daily",
+      "heroPriceValue": "10 AM – 9 PM",
+      "heroTimingLabel": "Starting From",
+      "heroTimingValue": "₹199",
+      "heroBestForLabel": "For Everyone",
+      "heroBestForValue": "Men • Women • Kids"
+    },
+    "sale": {
+      "badge": "Season Edit",
+      "tagline": "Curated Styles for Everyday Wear"
+    },
+    "contact": {
+      "address": "29/4,Kanhiya Bullding, near Bharath Takies, Raja Mandi, Agra, Uttar Pradesh 282002",
+      "phone": "+91 90126 16644",
+      "whatsapp": "+91 90126 16644"
+    },
+    "timing": {
+      "weekdaysLabel": "Everyday",
+      "weekdaysHours": "10:00 AM - 9:00 PM",
+      "sundayLabel": "",
+      "sundayHours": "",
+      "statusText": "Open Today"
+    },
+    "map": {
+      "query": "top fashion agra google maps",
+      "locationUrl": "https://maps.app.goo.gl/rE9nkWNutdTjvvqn6",
+      "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.9422246924714!2d78.00005469999999!3d27.189552600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974775d7b79416b%3A0xa37befcd424bb31e!2sTop%20Fashion!5e0!3m2!1sen!2sin!4v1776099126511!5m2!1sen!2sin"
+    },
+    "social": {
+      "instagramUrl": "https://www.instagram.com/",
+      "instagramHandle": "@top_fashion_raja_mandi_agra_",
+      "facebookUrl": "https://www.facebook.com/",
+      "facebookHandle": "/topfashionmeerut",
+      "mapsLabel": "Find the store and plan a quick visit."
+    },
+    "others": {
+      "reviewScore": "4.8 / 5",
+      "reviewSummary": "Based on local customer feedback and repeat shoppers.",
+      "reviewNote": "Customers love the easy pricing, welcoming service and updated styles.",
+      "copyrightText": "2026 Top Fashion. All rights reserved."
+    },
+    "collections": [
+      {
+        "title": "Shirts",
+        "badge": "Trending",
+        "description": "Clean everyday fits for office, college and casual wear.",
+        "price": "200",
+        "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80",
+        "featured": true
+      },
+      {
+        "title": "Dresses",
+        "badge": "New Edit",
+        "description": "Flowy silhouettes and easy styling for festive or day wear.",
+        "price": "500",
+        "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+        "featured": true
+      },
+      {
+        "title": "Kids Wear",
+        "badge": "Family Pick",
+        "description": "Comfortable, colorful essentials for active daily routines.",
+        "price": "300",
+        "image": "https://images.unsplash.com/photo-1519238359922-989348752efb?auto=format&fit=crop&w=900&q=80",
+        "featured": true
+      },
+      {
+        "title": "Ethnic Wear",
+        "badge": "Festive",
+        "description": "Elegant pieces for celebrations, weddings and seasonal shopping.",
+        "price": "1000",
+        "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=80",
+        "featured": true
+      },
+      {
+        "title": "Denim Edit",
+        "badge": "Daily Wear",
+        "description": "Classic denim options for practical wardrobes and repeat wear.",
+        "price": "650",
+        "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80",
+        "featured": false
+      },
+      {
+        "title": "Workwear Sets",
+        "badge": "Polished",
+        "description": "Tailored looks that feel sharp without becoming too formal.",
+        "price": "750",
+        "image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80",
+        "featured": false
+      }
+    ]
+  },
+  "updatedAt": "2026-04-13T16:57:55.190Z"
+}

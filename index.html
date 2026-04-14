@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Fashion | Trendy &amp; Affordable Clothing in Meerut</title>
+    <meta
+      name="description"
+      content="Top Fashion is a modern clothing store website concept for Meerut with collections, reviews, timings, and contact details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-shell">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" data-bind="branding.companyName">Top Fashion</span>
+          <span class="brand-note" data-bind="branding.brandNote">Meerut Boutique</span>
+        </a>
+
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <label class="nav-toggle-button" for="nav-toggle">
+          <span class="menu-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span>Menu</span>
+        </label>
+
+        <div class="header-links">
+          <nav class="site-nav" aria-label="Primary">
+            <ul>
+              <li><a class="is-active" href="index.html">Home</a></li>
+              <li><a href="collections.html">Collections</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <a class="button button-ghost" data-phone-link href="tel:+919876543210">Call</a>
+            <a class="button button-whatsapp" data-whatsapp-link href="https://wa.me/919876598765">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="offer-strip">
+      <div class="container offer-inner">
+        <span class="offer-badge" data-bind="sale.badge">Festive Sale</span>
+        <span data-bind="sale.tagline">Fresh arrivals for men, women and kids. Styles starting from ₹200.</span>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div
+          class="container hero-banner"
+          style="--hero-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&amp;fit=crop&amp;w=1400&amp;q=80');"
+        >
+          <div class="hero-content">
+            <span class="eyebrow" data-bind="branding.heroEyebrow">Affordable everyday fashion</span>
+            <h1 data-bind="branding.heroTitle">Top Fashion</h1>
+            <p data-bind="branding.heroDescription">
+              Trendy, polished and budget-friendly clothing in Meerut. Discover curated looks for
+              men, women and kids in a simple, welcoming shopping experience.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="collections.html">View Collections</a>
+              <a class="button button-light" href="contact.html">Visit Store</a>
+            </div>
+
+            <div class="hero-facts">
+              <div class="hero-fact">
+                <span class="fact-label" data-bind="branding.heroPriceLabel">Starting Price</span>
+                <span class="fact-value" data-bind="branding.heroPriceValue">From ₹200</span>
+              </div>
+              <div class="hero-fact">
+                <span class="fact-label" data-bind="branding.heroTimingLabel">Store Timing</span>
+                <span class="fact-value" data-bind="branding.heroTimingValue">Mon-Sat, 10 AM - 9 PM</span>
+              </div>
+              <div class="hero-fact">
+                <span class="fact-label" data-bind="branding.heroBestForLabel">Best For</span>
+                <span class="fact-value" data-bind="branding.heroBestForValue">Daily, festive and family wear</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow" style="color: var(--accent);">Featured Collections</span>
+              <h2 class="section-title">Simple cards, strong first impression</h2>
+            </div>
+            <p class="section-copy">
+              These sample collection blocks follow the clean UI direction you described, with
+              strong imagery, clear pricing and easy tap targets for mobile.
+            </p>
+          </div>
+
+          <div class="featured-collection-grid" id="home-collections-grid">
+            <a class="collection-card" href="collections.html">
+              <div class="collection-media">
+                <img
+                  src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                  alt="Shirts collection"
+                />
+              </div>
+              <div class="collection-body">
+                <span class="tag">Trending</span>
+                <h3 class="collection-title">Shirts</h3>
+                <p class="collection-copy">Clean everyday fits for office, college and casual wear.</p>
+                <p class="price-note">Starting from <span>₹200</span></p>
+                <span class="card-link">View Collection</span>
+              </div>
+            </a>
+
+            <a class="collection-card" href="collections.html">
+              <div class="collection-media">
+                <img
+                  src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                  alt="Dresses collection"
+                />
+              </div>
+              <div class="collection-body">
+                <span class="tag">New Edit</span>
+                <h3 class="collection-title">Dresses</h3>
+                <p class="collection-copy">Flowy silhouettes and easy styling for festive or day wear.</p>
+                <p class="price-note">Starting from <span>₹500</span></p>
+                <span class="card-link">View Collection</span>
+              </div>
+            </a>
+
+            <a class="collection-card" href="collections.html">
+              <div class="collection-media">
+                <img
+                  src="https://images.unsplash.com/photo-1519238359922-989348752efb?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                  alt="Kids wear collection"
+                />
+              </div>
+              <div class="collection-body">
+                <span class="tag">Family Pick</span>
+                <h3 class="collection-title">Kids Wear</h3>
+                <p class="collection-copy">Comfortable, colorful essentials for active daily routines.</p>
+                <p class="price-note">Starting from <span>₹300</span></p>
+                <span class="card-link">View Collection</span>
+              </div>
+            </a>
+
+            <a class="collection-card" href="collections.html">
+              <div class="collection-media">
+                <img
+                  src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                  alt="Ethnic wear collection"
+                />
+              </div>
+              <div class="collection-body">
+                <span class="tag">Festive</span>
+                <h3 class="collection-title">Ethnic Wear</h3>
+                <p class="collection-copy">Elegant pieces for celebrations, weddings and seasonal shopping.</p>
+                <p class="price-note">Starting from <span>₹1000</span></p>
+                <span class="card-link">View Collection</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow" style="color: var(--accent);">Why Choose Top Fashion</span>
+              <h2 class="section-title">A simple trust-building section</h2>
+            </div>
+            <p class="section-copy">
+              Short, easy-to-scan value points keep the page sharp without overdesigning it.
+            </p>
+          </div>
+
+          <div class="highlight-grid">
+            <article class="highlight-card">
+              <div class="highlight-icon">✓</div>
+              <h3 class="highlight-title">Premium Quality</h3>
+              <p class="highlight-copy">Reliable fabrics, good finishing and easy everyday comfort.</p>
+            </article>
+
+            <article class="highlight-card">
+              <div class="highlight-icon">★</div>
+              <h3 class="highlight-title">Latest Designs</h3>
+              <p class="highlight-copy">Fresh styles inspired by current looks and local preferences.</p>
+            </article>
+
+            <article class="highlight-card">
+              <div class="highlight-icon">₹</div>
+              <h3 class="highlight-title">Affordable Prices</h3>
+              <p class="highlight-copy">Budget-friendly options across daily wear and festive picks.</p>
+            </article>
+
+            <article class="highlight-card">
+              <div class="highlight-icon">∞</div>
+              <h3 class="highlight-title">Wide Variety</h3>
+              <p class="highlight-copy">A simple but flexible selection for men, women and kids.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow" style="color: var(--accent);">Customer Reviews</span>
+              <h2 class="section-title">Lightweight social proof</h2>
+            </div>
+            <p class="section-copy">
+              Short review cards help build trust quickly without overwhelming the page.
+            </p>
+          </div>
+
+          <div class="review-stack">
+            <article class="rating-card">
+              <div>
+                <span class="review-stars">★★★★★</span>
+                <strong data-bind="others.reviewScore">4.8 / 5</strong>
+                <span data-bind="others.reviewSummary">Based on local customer feedback and repeat shoppers.</span>
+              </div>
+              <p class="review-copy" data-bind="others.reviewNote">
+                Customers love the easy pricing, welcoming service and updated styles.
+              </p>
+            </article>
+
+            <article class="review-card">
+              <span class="review-stars">★★★★★</span>
+              <p class="review-copy">Great variety and affordable prices for daily wear.</p>
+              <h3 class="review-name">Rahul, Meerut</h3>
+            </article>
+
+            <article class="review-card">
+              <span class="review-stars">★★★★☆</span>
+              <p class="review-copy">Nice collection for festive shopping and family outfits.</p>
+              <h3 class="review-name">Priya, Meerut</h3>
+            </article>
+
+            <article class="review-card">
+              <span class="review-stars">★★★★★</span>
+              <p class="review-copy">Loved the quality, service and simple store experience.</p>
+              <h3 class="review-name">Aman, Meerut</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container timing-layout">
+          <article class="timing-card">
+            <span class="eyebrow" style="color: var(--accent);">Store Timings</span>
+            <h2 class="section-title" style="margin-top: 0.35rem;">Clear and useful visit info</h2>
+            <p class="timing-copy">
+              This section stays intentionally clean, so users can understand opening hours at a
+              glance.
+            </p>
+
+            <div class="timing-table">
+              <div class="timing-row">
+                <strong data-bind="timing.weekdaysLabel">Mon - Sat</strong>
+                <span data-bind="timing.weekdaysHours">10:00 AM - 9:00 PM</span>
+              </div>
+              <div class="timing-row">
+                <strong data-bind="timing.sundayLabel">Sunday</strong>
+                <span data-bind="timing.sundayHours">Closed</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timing-card">
+            <span class="status-pill" data-bind="timing.statusText">Open Today</span>
+            <h3 class="timing-title" style="margin-top: 1.2rem;">Ready for store visits</h3>
+            <p class="timing-copy">
+              Plan your visit anytime between 10 AM and 9 PM on weekdays and Saturdays.
+            </p>
+            <div class="button-row" style="margin-top: 1.3rem;">
+              <a class="button button-primary" href="contact.html">Get Directions</a>
+              <a class="button button-ghost" data-phone-link href="tel:+919876543210">Call Store</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow" style="color: var(--accent);">Follow Top Fashion</span>
+              <h2 class="section-title">Simple social media cards</h2>
+            </div>
+            <p class="section-copy">
+              These cards give the homepage a polished finish while keeping the conversion options
+              obvious.
+            </p>
+          </div>
+
+          <div class="social-grid" data-social-grid>
+            <a class="social-card instagram" href="https://www.instagram.com/">
+              <div class="social-icon">IG</div>
+              <h3 class="social-title">Instagram</h3>
+              <p class="social-copy">@topfashion.meerut</p>
+              <span class="card-link">Follow for new arrivals</span>
+            </a>
+
+            <a class="social-card facebook" href="https://www.facebook.com/">
+              <div class="social-icon">FB</div>
+              <h3 class="social-title">Facebook</h3>
+              <p class="social-copy">/topfashionmeerut</p>
+              <span class="card-link">Visit page</span>
+            </a>
+
+            <a class="social-card maps" href="https://www.google.com/maps/search/?api=1&amp;query=Meerut">
+              <div class="social-icon">MAP</div>
+              <h3 class="social-title">Google Maps</h3>
+              <p class="social-copy">Find the store and plan a quick visit.</p>
+              <span class="card-link">Open location</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow" style="color: var(--accent);">Contact &amp; Location</span>
+              <h2 class="section-title">Built for local discovery</h2>
+            </div>
+            <p class="section-copy">
+              The layout keeps your essential contact details visible while giving space for a map
+              embed and fast action buttons.
+            </p>
+          </div>
+
+          <div class="contact-layout">
+            <article class="contact-card">
+              <span class="eyebrow" style="color: var(--accent);" data-bind="branding.companyName">Top Fashion</span>
+              <h3 class="contact-title" style="margin-top: 0.35rem;">Sample store details</h3>
+
+              <ul class="detail-list">
+                <li>
+                  <span class="detail-label">Address</span>
+                  <span class="detail-value" data-bind="contact.address">XYZ Market, Meerut, Uttar Pradesh</span>
+                </li>
+                <li>
+                  <span class="detail-label">Phone</span>
+                  <span class="detail-value" data-phone-display>+91 98765 43210</span>
+                </li>
+                <li>
+                  <span class="detail-label">WhatsApp</span>
+                  <span class="detail-value" data-whatsapp-display>+91 98765 98765</span>
+                </li>
+                <li>
+                  <span class="detail-label">Store Hours</span>
+                  <span class="detail-value" data-timing-summary>Mon-Sat: 10 AM - 9 PM | Sunday: Closed</span>
+                </li>
+              </ul>
+
+              <div class="action-stack" style="margin-top: 1.5rem;">
+                <a class="button button-primary" data-phone-link href="tel:+919876543210">Call Now</a>
+                <a class="button button-whatsapp" data-whatsapp-link href="https://wa.me/919876598765">WhatsApp</a>
+                <a
+                  class="button button-ghost"
+                  data-map-link
+                  href="https://www.google.com/maps/search/?api=1&amp;query=XYZ+Market+Meerut"
+                >
+                  Get Directions
+                </a>
+              </div>
+            </article>
+
+            <article class="map-card">
+              <iframe
+                title="Map showing Meerut location"
+                loading="lazy"
+                data-map-embed
+                src="https://www.google.com/maps?q=Meerut%2C%20Uttar%20Pradesh&amp;output=embed"
+              ></iframe>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html">
+              <span class="brand-mark" data-bind="branding.companyName">Top Fashion</span>
+              <span class="brand-note" data-bind="branding.brandNote">Simple local fashion website</span>
+            </a>
+            <p class="footer-copy" data-bind="branding.footerDescription">
+              Sample website concept for a clean, professional clothing store presence in Meerut.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="footer-title">Store Info</h3>
+            <ul class="footer-contact">
+              <li data-bind="contact.address">XYZ Market, Meerut</li>
+              <li><a data-phone-link href="tel:+919876543210"><span data-phone-display>+91 98765 43210</span></a></li>
+              <li><a data-whatsapp-link href="https://wa.me/919876598765"><span data-whatsapp-display>+91 98765 98765</span></a></li>
+              <li data-timing-summary>Mon-Sat: 10 AM - 9 PM | Sunday: Closed</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-title">Quick Links</h3>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="collections.html">Collections</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom" data-bind="others.copyrightText">&copy; 2026 Top Fashion. All rights reserved.</div>
+      </div>
+    </footer>
+  </body>
+</html>

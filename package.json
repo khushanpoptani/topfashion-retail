@@ -1,0 +1,10 @@
+{
+  "name": "top-fashion-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Top Fashion website with JavaScript admin and JSON-backed content.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

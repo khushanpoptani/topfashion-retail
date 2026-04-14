@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections | Top Fashion</title>
+    <meta
+      name="description"
+      content="Browse sample Top Fashion collections with shirts, dresses, kids wear, ethnic wear and seasonal edits."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-shell">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" data-bind="branding.companyName">Top Fashion</span>
+          <span class="brand-note" data-bind="branding.brandNote">Meerut Boutique</span>
+        </a>
+
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <label class="nav-toggle-button" for="nav-toggle">
+          <span class="menu-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span>Menu</span>
+        </label>
+
+        <div class="header-links">
+          <nav class="site-nav" aria-label="Primary">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a class="is-active" href="collections.html">Collections</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <a class="button button-ghost" data-phone-link href="tel:+919876543210">Call</a>
+            <a class="button button-whatsapp" data-whatsapp-link href="https://wa.me/919876598765">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div
+          class="container page-hero-card"
+          style="--hero-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&amp;fit=crop&amp;w=1400&amp;q=80');"
+        >
+          <div class="page-hero-content">
+            <span class="eyebrow">Collections</span>
+            <h1>Fresh categories with simple pricing</h1>
+            <p>
+              This page expands the product-first feel of the homepage with more category cards,
+              clear price points and sample visuals that can later be swapped with real store
+              photography.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Men</span>
+              <span class="pill">Women</span>
+              <span class="pill">Kids</span>
+              <span class="pill">Festive</span>
+              <span class="pill">Daily Wear</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section page-block">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow" style="color: var(--accent);">Featured Catalog</span>
+              <h2 class="section-title">Collection cards you can scale later</h2>
+            </div>
+            <p class="section-copy">
+              Each card is clickable, image-led and structured around the "starting from" pricing
+              style you wanted.
+            </p>
+          </div>
+
+          <div class="catalog-grid" id="collections-catalog-grid">
+            <a class="collection-card" href="contact.html">
+              <div class="collection-media">
+                <img
+                  src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                  alt="Everyday shirts"
+                />
+              </div>
+              <div class="collection-body">
+                <span class="tag">Trending</span>
+                <h3 class="collection-title">Everyday Shirts</h3>
+                <p class="collection-copy">Reliable fits for work, college and easy weekend styling.</p>
+                <p class="price-note">Starting from <span>₹200</span></p>
+                <span class="card-link">View Details</span>
+              </div>
+            </a>
+
+            <a class="collection-card" href="contact.html">
+              <div class="collection-media">
+                <img
+                  src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                  alt="Casual dresses"
+                />
+              </div>
+              <div class="collection-body">
+                <span class="tag">New Edit</span>
+                <h3 class="collection-title">Casual Dresses</h3>
+                <p class="collection-copy">Soft silhouettes and easy colors for day-to-evening wear.</p>
+                <p class="price-note">Starting from <span>₹500</span></p>
+                <span class="card-link">View Details</span>
+              </div>
+            </a>
+
+            <a class="collection-card" href="contact.html">
+              <div class="collection-media">
+                <img
+                  src="https://images.unsplash.com/photo-1519238359922-989348752efb?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                  alt="Kids essentials"
+                />
+              </div>
+              <div class="collection-body">
+                <span class="tag">Best Seller</span>
+                <h3 class="collection-title">Kids Essentials</h3>
+                <p class="collection-copy">Comfort-first picks for active days and family shopping.</p>
+                <p class="price-note">Starting from <span>₹300</span></p>
+                <span class="card-link">View Details</span>
+              </div>
+            </a>
+
+            <a class="collection-card" href="contact.html">
+              <div class="collection-media">
+                <img
+                  src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                  alt="Ethnic festive wear"
+                />
+              </div>
+              <div class="collection-body">
+                <span class="tag">Festive</span>
+                <h3 class="collection-title">Ethnic Wear</h3>
+                <p class="collection-copy">Elegant occasion pieces for weddings and seasonal shopping.</p>
+                <p class="price-note">Starting from <span>₹1000</span></p>
+                <span class="card-link">View Details</span>
+              </div>
+            </a>
+
+            <a class="collection-card" href="contact.html">
+              <div class="collection-media">
+                <img
+                  src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                  alt="Denim collection"
+                />
+              </div>
+              <div class="collection-body">
+                <span class="tag">Daily Wear</span>
+                <h3 class="collection-title">Denim Edit</h3>
+                <p class="collection-copy">Classic denim options for practical wardrobes and repeat wear.</p>
+                <p class="price-note">Starting from <span>₹650</span></p>
+                <span class="card-link">View Details</span>
+              </div>
+            </a>
+
+            <a class="collection-card" href="contact.html">
+              <div class="collection-media">
+                <img
+                  src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                  alt="Workwear collection"
+                />
+              </div>
+              <div class="collection-body">
+                <span class="tag">Polished</span>
+                <h3 class="collection-title">Workwear Sets</h3>
+                <p class="collection-copy">Tailored looks that feel sharp without becoming too formal.</p>
+                <p class="price-note">Starting from <span>₹750</span></p>
+                <span class="card-link">View Details</span>
+              </div>
+            </a>
+
+            <a class="collection-card" href="contact.html">
+              <div class="collection-media">
+                <img
+                  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                  alt="Summer tops collection"
+                />
+              </div>
+              <div class="collection-body">
+                <span class="tag">Seasonal</span>
+                <h3 class="collection-title">Summer Tops</h3>
+                <p class="collection-copy">Light layers and easy fits made for warmer everyday styling.</p>
+                <p class="price-note">Starting from <span>₹350</span></p>
+                <span class="card-link">View Details</span>
+              </div>
+            </a>
+
+            <a class="collection-card" href="contact.html">
+              <div class="collection-media">
+                <img
+                  src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                  alt="Fashion accessories"
+                />
+              </div>
+              <div class="collection-body">
+                <span class="tag">Add-ons</span>
+                <h3 class="collection-title">Accessories</h3>
+                <p class="collection-copy">Small finishing pieces to complete everyday and festive looks.</p>
+                <p class="price-note">Starting from <span>₹150</span></p>
+                <span class="card-link">View Details</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-band">
+            <h3>Want to finalize pricing or replace sample photos next?</h3>
+            <p>
+              This layout is ready for real product photos, real categories and WhatsApp-first
+              inquiry flows whenever you want to move from sample UI into actual store content.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" href="contact.html">Plan a Visit</a>
+              <a class="button button-whatsapp" data-whatsapp-link href="https://wa.me/919876598765">Chat on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html">
+              <span class="brand-mark" data-bind="branding.companyName">Top Fashion</span>
+              <span class="brand-note" data-bind="branding.brandNote">Simple local fashion website</span>
+            </a>
+            <p class="footer-copy" data-bind="branding.footerDescription">
+              Sample website concept for a clean, professional clothing store presence in Meerut.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="footer-title">Store Info</h3>
+            <ul class="footer-contact">
+              <li data-bind="contact.address">XYZ Market, Meerut</li>
+              <li><a data-phone-link href="tel:+919876543210"><span data-phone-display>+91 98765 43210</span></a></li>
+              <li><a data-whatsapp-link href="https://wa.me/919876598765"><span data-whatsapp-display>+91 98765 98765</span></a></li>
+              <li data-timing-summary>Mon-Sat: 10 AM - 9 PM | Sunday: Closed</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-title">Quick Links</h3>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="collections.html">Collections</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom" data-bind="others.copyrightText">&copy; 2026 Top Fashion. All rights reserved.</div>
+      </div>
+    </footer>
+  </body>
+</html>

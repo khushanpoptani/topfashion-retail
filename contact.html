@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Top Fashion</title>
+    <meta
+      name="description"
+      content="Contact Top Fashion, view sample store timings, directions, phone and WhatsApp details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-shell">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" data-bind="branding.companyName">Top Fashion</span>
+          <span class="brand-note" data-bind="branding.brandNote">Meerut Boutique</span>
+        </a>
+
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <label class="nav-toggle-button" for="nav-toggle">
+          <span class="menu-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span>Menu</span>
+        </label>
+
+        <div class="header-links">
+          <nav class="site-nav" aria-label="Primary">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="collections.html">Collections</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a class="is-active" href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <a class="button button-ghost" data-phone-link href="tel:+919876543210">Call</a>
+            <a class="button button-whatsapp" data-whatsapp-link href="https://wa.me/919876598765">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div
+          class="container page-hero-card"
+          style="--hero-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&amp;fit=crop&amp;w=1400&amp;q=80');"
+        >
+          <div class="page-hero-content">
+            <span class="eyebrow">Contact &amp; Location</span>
+            <h1>Clear actions for calls, WhatsApp and directions</h1>
+            <p>
+              This page keeps the contact journey direct and practical, with a strong conversion
+              focus for local store visitors.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section page-block">
+        <div class="container contact-layout">
+          <article class="contact-card">
+            <span class="eyebrow" style="color: var(--accent);" data-bind="branding.companyName">Top Fashion</span>
+            <h2 class="section-title" style="margin-top: 0.35rem;">Sample contact details</h2>
+            <p class="contact-copy">
+              Replace these details later with your real store address, number and map location.
+            </p>
+
+            <ul class="detail-list">
+              <li>
+                <span class="detail-label">Address</span>
+                <span class="detail-value" data-bind="contact.address">XYZ Market, Meerut, Uttar Pradesh</span>
+              </li>
+              <li>
+                <span class="detail-label">Phone</span>
+                <span class="detail-value" data-phone-display>+91 98765 43210</span>
+              </li>
+              <li>
+                <span class="detail-label">WhatsApp</span>
+                <span class="detail-value" data-whatsapp-display>+91 98765 98765</span>
+              </li>
+              <li>
+                <span class="detail-label">Store Timing</span>
+                <span class="detail-value" data-timing-summary>Mon-Sat: 10 AM - 9 PM | Sunday Closed</span>
+              </li>
+            </ul>
+
+            <div class="action-stack" style="margin-top: 1.6rem;">
+              <a class="button button-primary" data-phone-link href="tel:+919876543210">Call Now</a>
+              <a class="button button-whatsapp" data-whatsapp-link href="https://wa.me/919876598765">WhatsApp</a>
+              <a
+                class="button button-ghost"
+                data-map-link
+                href="https://www.google.com/maps/search/?api=1&amp;query=XYZ+Market+Meerut"
+              >
+                Get Directions
+              </a>
+            </div>
+          </article>
+
+          <article class="map-card">
+            <iframe
+              title="Map showing Meerut location"
+              loading="lazy"
+              data-map-embed
+              src="https://www.google.com/maps?q=Meerut%2C%20Uttar%20Pradesh&amp;output=embed"
+            ></iframe>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container timing-layout">
+          <article class="timing-card">
+            <span class="eyebrow" style="color: var(--accent);">Store Timings</span>
+            <h2 class="section-title" style="margin-top: 0.35rem;">Useful visit information</h2>
+            <div class="timing-table">
+              <div class="timing-row">
+                <strong data-bind="timing.weekdaysLabel">Mon - Sat</strong>
+                <span data-bind="timing.weekdaysHours">10:00 AM - 9:00 PM</span>
+              </div>
+              <div class="timing-row">
+                <strong data-bind="timing.sundayLabel">Sunday</strong>
+                <span data-bind="timing.sundayHours">Closed</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timing-card">
+            <span class="status-pill" data-bind="timing.statusText">Open Today</span>
+            <h3 class="timing-title" style="margin-top: 1.2rem;">Fast local support</h3>
+            <p class="timing-copy">
+              Encourage users to call or chat before visiting, especially during busy festival
+              periods and new arrivals.
+            </p>
+            <div class="button-row" style="margin-top: 1.3rem;">
+              <a class="button button-dark" data-phone-link href="tel:+919876543210">Call Store</a>
+              <a class="button button-whatsapp" data-whatsapp-link href="https://wa.me/919876598765">Message Store</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow" style="color: var(--accent);">Follow Online</span>
+              <h2 class="section-title">Social links stay visible too</h2>
+            </div>
+            <p class="section-copy">
+              The contact page can also carry simple social cards so visitors have more than one way
+              to connect with the brand.
+            </p>
+          </div>
+
+          <div class="social-grid" data-social-grid>
+            <a class="social-card instagram" href="https://www.instagram.com/">
+              <div class="social-icon">IG</div>
+              <h3 class="social-title">Instagram</h3>
+              <p class="social-copy">@topfashion.meerut</p>
+              <span class="card-link">Follow updates</span>
+            </a>
+
+            <a class="social-card facebook" href="https://www.facebook.com/">
+              <div class="social-icon">FB</div>
+              <h3 class="social-title">Facebook</h3>
+              <p class="social-copy">/topfashionmeerut</p>
+              <span class="card-link">Visit page</span>
+            </a>
+
+            <a class="social-card maps" href="https://www.google.com/maps/search/?api=1&amp;query=Meerut">
+              <div class="social-icon">MAP</div>
+              <h3 class="social-title">Google Maps</h3>
+              <p class="social-copy">Use maps for directions and local discovery.</p>
+              <span class="card-link">Open location</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html">
+              <span class="brand-mark" data-bind="branding.companyName">Top Fashion</span>
+              <span class="brand-note" data-bind="branding.brandNote">Simple local fashion website</span>
+            </a>
+            <p class="footer-copy" data-bind="branding.footerDescription">
+              Sample website concept for a clean, professional clothing store presence in Meerut.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="footer-title">Store Info</h3>
+            <ul class="footer-contact">
+              <li data-bind="contact.address">XYZ Market, Meerut</li>
+              <li><a data-phone-link href="tel:+919876543210"><span data-phone-display>+91 98765 43210</span></a></li>
+              <li><a data-whatsapp-link href="https://wa.me/919876598765"><span data-whatsapp-display>+91 98765 98765</span></a></li>
+              <li data-timing-summary>Mon-Sat: 10 AM - 9 PM | Sunday: Closed</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-title">Quick Links</h3>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="collections.html">Collections</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom" data-bind="others.copyrightText">&copy; 2026 Top Fashion. All rights reserved.</div>
+      </div>
+    </footer>
+  </body>
+</html>
